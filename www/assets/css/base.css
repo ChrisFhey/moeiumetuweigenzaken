@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    padding: 0; 
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title-wrapper {
+    height: 100vh;
+}
+
+.title-wrapper h1 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 24px; 
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .title-wrapper h1 {
+        width: 900px;
+        max-width: 100%;
+
+        font-size: 60px; 
+        text-align: center;
+    }   
+}
+
+.arrow {
+    border: solid #F90F37;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    left: 50%;
+    top: 85%;
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    cursor: pointer
+}
+
+.image-wrapper {
+    height: 100vh;
+
+    position: relative;
+}
+
+.image-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);s
+}
+
+@media (min-width: 480px) {
+    .image-wrapper img {
+        max-width: 560px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-wrapper img {
+        max-width: 1024px;
+    }
+}
+
+.section {
+    height: 100vh;
+}
